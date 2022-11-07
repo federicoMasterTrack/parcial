@@ -1,3 +1,16 @@
 <p>
   plantas works!
 </p>
+<div class="container-fluid" >
+  <div class="row">
+   <div class="col-4 border">
+
+      <ul class="list-group" *ngFor="let planta of plantas">
+        <li class="list-group-item">{{planta.nombre_comun}}</li>
+
+      </ul>
+
+
+   </div>
+  </div>
+</div>
