@@ -1,16 +1,34 @@
 <p>
-  plantas works!
+  Vivero el otoño
 </p>
-<div class="container-fluid" >
-  <div class="row">
-   <div class="col-4 border">
-
-      <ul class="list-group" *ngFor="let planta of plantas">
-        <li class="list-group-item">{{planta.nombre_comun}}</li>
-
-      </ul>
-
-
-   </div>
+<div class="container-fluid">
+  <div class="col-12 border">
+    <img src="./pexels-gioluksz-ft-13602340.jpg" class="img-rounded"  >
   </div>
+
 </div>
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">nombre común</th>
+      <th scope="col">tipo</th>
+      <th scope="col">clima</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let planta of plantas">
+      <tr>
+        <th scope="row">{{planta.id }}</th>
+        <td>{{planta.nombre_comun}}</td>
+        <td>{{planta.tipo}}</td>
+        <td>{{planta.clima}} </td>
+      </tr>
+    </ng-container>
+
+  </tbody>
+</table>
+
+
+
